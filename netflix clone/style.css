@@ -155,7 +155,20 @@ body{
    font-weight: 400;
 }
 .img-sec{
-   object-fit: cover;
+   position: relative;
 }
-
-
+.img-sec  video{
+       position: absolute;
+       top: 60px;
+       right: 0;
+       width: 35vw;
+       }
+.img-sec img{
+   width: 40vw;
+   position: relative;
+   z-index: 1;
+}
+#img-sec-1{
+   height: 165px;
+   width: 600px ;
+}
