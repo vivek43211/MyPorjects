@@ -97,17 +97,17 @@ body{
    background-color: transparent;
    color: white;
    opacity: 0.5px;
-   width: 300px;
+   width: 360px;
    padding-left: 13px;
    border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    margin-left: 16px;
+    margin-left: 12px;
     font-size: 16px;
     border: 0.3px solid white;
     font-weight: 400px;
 
 }
-#hero-input{
+.hero-input{
    display: inline;
 
 }
@@ -128,7 +128,7 @@ body{
    height: 70vh;
  width: 100%;
  background-color: black;
- margin-top: 10px;
+ margin-top: 6px;
  color: white;
  display: flex;
  justify-content: space-evenly;
@@ -171,4 +171,47 @@ body{
 #img-sec-1{
    height: 165px;
    width: 600px ;
+}
+
+
+/* frq box */
+
+.frq{
+   height: 780px;
+   background-color: black;
+   color: white;
+   margin-top: 6px;
+   text-align: center;
+   padding-top: 40px;
+}
+.frq-text{
+   font-size: 48px;
+   font-weight: 900;
+   margin-bottom: 18px;
+}
+.frqbox{
+  height: 25px;
+  width: 70vw;
+  background-color: rgba(128, 128, 128, 0.482);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 24px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.separate{
+   margin-bottom: 8px;
+}
+
+.frq-input{
+   font-size: 20px;
+   font-weight: 400;
+   padding-top: 40px;
+   margin-bottom: 12px;
+
+}
+#gap{
+   margin-bottom: 20px;
 }
