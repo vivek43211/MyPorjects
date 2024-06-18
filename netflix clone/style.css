@@ -177,7 +177,7 @@ body{
 /* frq box */
 
 .frq{
-   height: 780px;
+   height: 760px;
    background-color: black;
    color: white;
    margin-top: 6px;
@@ -214,4 +214,34 @@ body{
 }
 #gap{
    margin-bottom: 20px;
+}
+
+/* last page */
+.lastpg{
+   background-color: black;
+   margin-top: 6px;
+   color: rgba(255, 255, 255, 0.7) ;
+   padding: 60px;
+}
+.panel-1{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 12px;
+}
+ul a{
+   color: rgba(255, 255, 255, 0.7);
+   display: flex;
+   font-size: 0.9rem;
+   margin-top: 12px;
+}
+.panel-2{
+   margin-top:  20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+#panel2-text{
+   padding-top: 20px;
+  
 }
