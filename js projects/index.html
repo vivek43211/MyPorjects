@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current time </title>
+    <style>
+        body {
+            display: flex;
+
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: plum;
+            margin-left: 10px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="id1"></h1>hours
+    </div>
+    <div>
+        <h1 class="id2"></h1>minute
+    </div>
+    <div>
+        <h1 class="id3"></h1>second
+    </div>
+</body>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+        function upadatetime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minute = String(now.getMinutes()).padStart(2, '0');
+            const second = String(now.getSeconds()).padStart(2, '0');
+            const hh = document.querySelector(".id1")
+            const mm = document.querySelector(".id2")
+            const ss = document.querySelector(".id3")
+
+            hh.innerHTML = hours;
+            ss.innerHTML = second;
+            mm.innerHTML = minute;
+        }
+        upadatetime();
+        setInterval(upadatetime, 1000)
+        // setInterval(updateTime(), 1000); // This immediately calls updateTime() and then tries to pass its return value to setInterval
+        // time change after every reload 
+        //setInterval(updateTime, 1000); // This correctly sets up the interval to call updateTime every second
+
+   } );
+
+</script>
+
+</html>
