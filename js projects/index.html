@@ -6,36 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current time </title>
     <style>
-        body {
+        .container{
             display: flex;
+            justify-content: center;
+            padding-top: 80px;
 
         }
 
-        div {
+
+        .inner{
             height: 100px;
             width: 100px;
             background-color: plum;
             margin-left: 10px;
             border-radius: 50%;
             text-align: center;
+            border: 2px solid red;
+            
         }
 
         h1 {
             font-size: 15px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1 class="id1"></h1>hours
+    <div class="container">
+        <div class="inner">
+            <h1 class="id1"></h1>hours
+        </div>
+        <div class="inner">
+            <h1 class="id2"></h1>minute
+        </div>
+        <div class="inner">
+            <h1 class="id3"></h1>second
+        </div>
     </div>
-    <div>
-        <h1 class="id2"></h1>minute
-    </div>
-    <div>
-        <h1 class="id3"></h1>second
-    </div>
+   
 </body>
 <script>
    document.addEventListener("DOMContentLoaded", function () {
