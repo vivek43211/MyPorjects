@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #96C9F4;
+        }
+
+        .nav-bar {
+            height: 40px;
+            width: 100%;
+            background-color: #3FA2F6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+
+        }
+
+        .sign-up {
+            height: 500px;
+            width: 500px;
+            background-color: #BBE9FF;
+            border-radius: 15px;
+            text-align: center;
+
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin-left:8px ; 
+        }
+        .nav-links{
+           width: 30%;
+           display: flex;
+           justify-content: space-evenly;
+        }
+        .nav-links a{
+            color: whitesmoke;
+        }
+        .nav-links a:hover {
+            color: rgb(170, 181, 170);
+        }
+
+        .form {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 35px;
+            color: white;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=email] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="index.html" class="logo">
+            <img src="image.jpg" alt="Logo">
+        </a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <p class="form"> Login/Sign up </p>
+    <div class="container">
+        <div class="sign-up">
+            <h3><u>Sign - up </u></h3>
+            <form action="signup_process.php" method="post">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="login">
+                <p>Already have an account? <a href="login.html" target="_blank">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    
+</script>
+</html>
