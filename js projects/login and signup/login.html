@@ -114,22 +114,41 @@
             <h3><u>Log-in </u></h3>
             <form action="login_process.php" method="post">
                 <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <input type="text" placeholder="Enter Username" id="name" required>
 
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" id="psw" required>
 
                 <button type="submit">Log-in</button>
             </form>
             <div class="login">
                 <p>Create an account ??<a href="signup.html" target="_blank">Sign-up</a></p>
             </div>
+            <div id="erroeMsg"></div>
         </div>
     </div>
 
 </body>
 <script>
+    function validateLoginForm() {
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("psw").value;
     
+        if (name == "" || password == "") {
+            document.getElementById("errorMsg").innerHTML = "Please fill the required fields"
+            return false;
+        }
+    
+        else if (password.length < 8) {
+            document.getElementById("errorMsg").innerHTML = "Your password must include atleast 8 characters"
+            return false;
+        }
+        else {
+            alert("Successfully logged in");
+            return true;
+        }
+    }
+    validateLoginForm();
 </script>
 </html>
